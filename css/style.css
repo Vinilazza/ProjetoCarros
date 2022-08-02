@@ -340,3 +340,13 @@ body {
   opacity: 0.8;
 }
 
+#bg {
+  background-color: #1e232b;
+   height: 60px;
+   color:#fff;
+   padding: 20px 2px;
+}
+#bg h4 {
+  align-items: center;
+  font-size: 18px;
+}
