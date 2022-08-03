@@ -46,3 +46,6 @@ $('.dropdown-menu li').click(function () {
   let msg = document.querySelector('.msg').innerHTML = `O modelo escolhido foi <a class="text-decoration-none fw-bold" style="color:coral;" href="${input2}">${input2}</a>`;
   document.querySelector('.dropdown input').style.display = '';
 }); 
+
+
+let 
