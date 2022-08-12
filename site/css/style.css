@@ -452,3 +452,6 @@ span.choose {
 .dropdown .dropdown-menu li:active {
     background-color: transparent 
 }
+li#1 {
+  display: none;
+}

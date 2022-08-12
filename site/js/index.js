@@ -3,6 +3,7 @@ const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
 const items = document.querySelector(".nav-items");
 const form = document.querySelector("form");
+const carros = ['Porsche 718', 'Porsche 911', 'Porsche Taycan','Porsche Macan','Porshe Panamera','Audi e-tron','Audi A3','Audi A5','Audi Q7','Audi Q8']
 
 menuBtn.addEventListener('click', () => {
   items.classList.add("active");
@@ -41,11 +42,30 @@ $('.dropdown .dropdown-menu li').click(function () {
 /*End Dropdown Menu*/
 
 
-$('.dropdown-menu li').click(function () {
-  let input2 = document.querySelector(".dropdown input").value;
-  let msg = document.querySelector('.msg').innerHTML = `O modelo escolhido foi <a class="text-decoration-none fw-bold" style="color:coral;" href="${input2}">${input2}</a>`;
-  document.querySelector('.dropdown input').style.display = '';
-}); 
 
 
-let 
+if (carros.includes) {
+
+  let count = 1;
+  carros.forEach(carro => {
+    const li = document.createElement("li")
+    li.setAttribute("id", count)
+    li.textContent = carro
+
+    li.addEventListener('click' ,() => {
+      const msg = document.querySelector(".msg");
+      const link = document.querySelector(".msg a")
+      msg.classList.remove("d-none")
+      link.textContent = li.textContent
+      const input = document.querySelector(".select");
+      input.textContent = li.textContent
+    })
+
+    document.querySelector(".dropdown-menu").appendChild(li)
+    count++;
+
+  })
+  
+}
+
+
