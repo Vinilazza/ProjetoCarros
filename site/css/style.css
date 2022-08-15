@@ -9,6 +9,14 @@
 body{
   background: #f2f2f2;
 }
+a#navbar {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+a#navbar:hover {
+  color: coral;
+}
 nav{
   background: #171c24;
   display: flex;
@@ -23,6 +31,13 @@ nav .logo{
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
+}
+.a-nav {
+  text-decoration: none;
+  color: #fff;
+}
+.a-nav:hover {
+  opacity: 0.9;
 }
 nav .nav-items{
   display: flex;

@@ -1,6 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     background-color: #fbfbfb;
   }
+.list-group-item {
+  background-color: #212529!important ;
+  color: #a4aeb8 !important;
+}
+.list-group-item:hover {
+  color: #676f77 !important;
+}
+.list-group-item.active {
+  border-color:#0f1113 !important;
+  background-color: #191d20 !important;
+  color: #d7e2ec !important;
+  border-radius: 15px !important;
+  box-shadow: 1px;
+}
+nav form{
+  display: flex;
+  height: 40px;
+  background: #1e232b;
+  min-width: 18%!important;
+  border-radius: 2px;
+  border: 1px solid rgba(155,155,155,0.2);
+}
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-left: 20px;
+}
+.search-nav {
+  margin-left: 110px;
+}
+.font {
+  font-family: 'montserrat',sans-serif;
+}
+.a-nav {
+  text-decoration: none;
+  color: #fff;
+}
+.a-nav:hover {
+  opacity: 0.9;
+}
+nav form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: coral;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+nav form button:hover{
+  background: rgba(247, 108, 57, 0.726);
+}
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
+
+
   @media (min-width: 991.98px) {
     main {
       padding-left: 240px;
