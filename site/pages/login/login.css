@@ -1,0 +1,28 @@
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-left: 20px;
+}
+
+.a-nav {
+  text-decoration: none;
+  color: #fff;
+}
+.a-nav:hover {
+  opacity: 0.9;
+}
+input.h {
+  height: 30px;
+}
+body {
+  background-color: #212529 !important;
+}
+.center {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    border: 2px solid #006100;
+}
